@@ -1,4 +1,3 @@
-
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
@@ -14,11 +13,11 @@ class Calculator {
 
     }
 
-    appendNumber(){
+    appendNumber(number){
 
     }
 
-    chooseOperation(){
+    chooseOperation(operation){
 
     }
 
@@ -26,17 +25,17 @@ class Calculator {
 
     }
 
-    getDisplayNumber(){
+    getDisplayNumber(number){
 
     }
-    
+
     updateDisplay(){
 
     }
 }
     
 
-const numbers = document.querySelectorAll("[data-number]");
+const numberBtns = document.querySelectorAll("[data-number]");
 const operationBtns = document.querySelectorAll("[data-operation]");
 const equalBtn = document.querySelector("[data-equals]");
 const deleteBtn = document.querySelector("[data-delete]");
