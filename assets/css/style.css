@@ -22,6 +22,7 @@ button{
     height: 40px;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .span-two{
     width: 104px;
