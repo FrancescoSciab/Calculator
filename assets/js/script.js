@@ -59,12 +59,15 @@ class Calculator {
 
     getDisplayNumber(number){
         const stringNumber = number.toString()
+        //split at . and get numbers on its left of . (integer)
         const integerDigits = parseFloat(stringNumber.split('.')[0])
+        //split at . and get numbers on its right of . (decimals)
         const decimalDigits = stringNumber.split('.')[1]
         let integerDisplay
         if (isNaN(integerDigits)) {
             integerDisplay = ''
         } else {
+            //to not have any decimal places after this value when gets converted to string
             integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
         }
         if (decimalDigits != null) {
@@ -98,13 +101,18 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 );
 
 numberBtns.forEach(button => {
-    calculator.appendNumber(button.innerText);
-    calculator.updateDisplay();
+    button.addEventListener('click', ()=>{
+        calculator.appendNumber(button.textContent);
+        calculator.updateDisplay();
+    })
+    
 })
 
 operationBtns.forEach(button => {
-    calculator.chooseOperation(button.innerText);
-    calculator.updateDisplay();
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.textContent);
+        calculator.updateDisplay();
+    })
 })
 
 equalsBtn.addEventListener('click', button => {
