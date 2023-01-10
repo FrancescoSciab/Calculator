@@ -13,7 +13,9 @@ class Calculator {
     
 //delete
     delete(){
-        this.currentOperand = this.currentOperand.toString().slice(0, -1);
+        if (this.currentOperand != 0) {
+            return this.currentOperand = this.currentOperand.toString().slice(0, -1);
+        }
     }
 
     appendNumber(number){
