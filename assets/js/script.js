@@ -103,7 +103,7 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 );
 
 numberBtns.forEach(button => {
-    button.addEventListener('click', ()=>{
+    button.addEventListener('click', () => {
         calculator.appendNumber(button.textContent);
         calculator.updateDisplay();
     })
@@ -131,3 +131,7 @@ deleteBtn.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+document.body.firstElementChild.dblclick = function(event) {
+    event.preventDefault();
+}
