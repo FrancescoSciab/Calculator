@@ -27,16 +27,18 @@
         background-color: $display-color;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: space-between;
         overflow: scroll;
         .previous-operand{
             font-size: 18px;
             padding: 3px;
+            max-width: 100%;
         }
         .current-operand{
             font-size: 36px;
             padding: 3px;
+            max-width: 100%;
         }
     }
 }
