@@ -18,16 +18,18 @@
     max-width: 230px;
     padding-bottom: 10px;
     text-align: center;
+
     .output{
         height: 75px;
         width: 100%;
         margin: 10px;
         border-radius: 5px;
-        background-color : $display-color;
+        background-color: $display-color;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: space-between;
+        overflow: scroll;
         .previous-operand{
             font-size: 18px;
             padding: 3px;
@@ -36,7 +38,6 @@
             font-size: 36px;
             padding: 3px;
         }
-        
     }
 }
 

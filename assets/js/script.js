@@ -135,3 +135,11 @@ deleteBtn.addEventListener('click', button => {
 document.body.firstElementChild.dblclick = function(event) {
     event.preventDefault();
 }
+
+
+
+const paras = document.getElementsByClassName("overf");
+
+for (const para of paras) {
+  para.scroll(100, 0);
+}
