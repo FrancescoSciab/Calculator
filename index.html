@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); </style>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="calculator-grid">
         <div class="output">
-            <div data-previous-operand class="previous-operand"> ciao 1</div>
-            <div data-current-operand class="current-operand"> ciao 2</div>
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand">0</div>
         </div>
         <div>
             <button data-all-clear class="span-two">AC</button>
@@ -20,7 +24,7 @@
             <button data-number>1</button>
             <button data-number>2</button>
             <button data-number>3</button>
-            <button data-operation>*</button>
+            <button data-operation>x</button>
             <button data-number>4</button>
             <button data-number>5</button>
             <button data-number>6</button>
@@ -34,5 +38,7 @@
             <button data-equals class="span-two">=</button>
         </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

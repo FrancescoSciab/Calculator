@@ -1,0 +1,57 @@
+@import "buttons";
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+.calculator-grid{
+    background-color: $calculator-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 230px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    .output{
+        height: 75px;
+        width: 100%;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: $display-color;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        overflow: scroll;
+        .previous-operand{
+            font-size: 18px;
+            padding: 3px;
+            max-width: 100%;
+        }
+        .current-operand{
+            font-size: 36px;
+            padding: 3px;
+            max-width: 100%;
+        }
+    }
+}
+
+button{
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.span-two{
+    width: 104px;
+}
+
