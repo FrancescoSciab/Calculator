@@ -1,17 +1,18 @@
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
         this.currentOperandTextElement = currentOperandTextElement;
         this.clear();
     }
-//clear function
+
     clear(){
         this.currentOperand = '0';
         this.previousOperand = '';
         this.operation = undefined;
     }
     
-//delete
+
     delete(){
         if (this.currentOperand != 0) {
             return this.currentOperand = this.currentOperand.toString().slice(0, -1);
@@ -134,12 +135,4 @@ deleteBtn.addEventListener('click', button => {
 
 document.body.firstElementChild.dblclick = function(event) {
     event.preventDefault();
-}
-
-
-
-const paras = document.getElementsByClassName("overf");
-
-for (const para of paras) {
-  para.scroll(100, 0);
 }
