@@ -1,4 +1,3 @@
-
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
@@ -12,7 +11,6 @@ class Calculator {
         this.operation = undefined;
     }
     
-
     delete(){
         if (this.currentOperand != 0) {
             return this.currentOperand = this.currentOperand.toString().slice(0, -1);
